@@ -34,7 +34,7 @@ dashboardPage(skin="red",
                             br(),
                             verbatimTextOutput("legendDivID"),
                             br(),
-                            HTML("<p>The information shown in this web app comes from the <a href=https://www.who.int/emergencies/diseases/novel-coronavirus-2019/situation-reports/>World Health Organization daily reports</a>. It was built by <a href=https://datametrix.co/servicios/>Datametrix</a>, using shinydashboard and dygraphs, and the daily web scrapping of the reports is performed using RCurl and rvest.</p>")
+                            HTML("<p>The information shown in this web app comes from the <a href=https://www.who.int/emergencies/diseases/novel-coronavirus-2019/situation-reports/>World Health Organization daily reports</a>. It was built by <a href=https://datametrix.co/servicios/>Datametrix</a>, using shinydashboard and dygraphs, and the daily web scrapping of the reports is performed using RCurl and rvest.</p>"),
                             br(),
                             HTML("<p><b>Since February 17th the confirmed infected definition has changed to fit the reported numbers of the Chinese government</b></p>")
                         )
