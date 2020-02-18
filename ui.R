@@ -41,7 +41,7 @@ dashboardPage(skin="red",
                     ),
                     box(width=12, height=831, title="World Health Organization Report", status="primary", solidHeader=T,
                             br(),
-                            HTML("<b>Click over the above graph at any data point to load and consult the complete WHO public report.</p>"),
+                            HTML("<p>Click over the above graph at any data point to load and consult the complete WHO public report.</p>"),
                             br(),
                         uiOutput("reporte")
                     )
