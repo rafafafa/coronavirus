@@ -1,6 +1,7 @@
 dashboardPage(skin="red",
     dashboardHeader(
-        title = "Coronavirus"
+        title = "Coronavirus",
+        tags$head(includeHTML(("google-analytics.html")
     ),
     dashboardSidebar(disable=T,
         sidebarMenu(id="tabitems",
