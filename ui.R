@@ -21,7 +21,7 @@ dashboardPage(skin="red",
             tabItem(tabName="mon",
                 tags$style(HTML(".box.box-solid.box-primary>.box-header {  color:#fff;  background:#eb4034} .box.box-solid.box-primary{border-bottom-color:#eb4034;border-left-color:#eb4034;border-right-color:#eb4034;border-top-color:#eb4034;}")),
                 fluidRow(
-                    box(width=12, height=500, title="Tracking", status="primary", solidHeader=T,
+                    box(width=12, height=600, title="Tracking", status="primary", solidHeader=T,
                         p(),
                         p(),
                         p(),
