@@ -30,16 +30,18 @@ dashboardPage(skin="red",
                         ),
                         column(3,
                             h4("Instructions:"),
-                            HTML("<p>Hover over the graph to show in the box below the absolute frequencies of infected and death individuals, and the daily ratio of deaths vs confirmed infected cases.</p>"),
+                            HTML("<p>Hover over the graph to show in the box below the absolute frequencies of infected and death individuals, and the proportion of deaths in relation to the daily total of infected people.</p>"),
                             br(),
                             verbatimTextOutput("legendDivID"),
                             br(),
-                            HTML("<p>The information shown in this web app comes from the <a href=https://www.who.int/emergencies/diseases/novel-coronavirus-2019/situation-reports/>World Health Organization daily reports</a>. It was built by <a href=https://datametrix.co/servicios/>Datametrix</a>, using shinydashboard and dygraphs, and the daily web scrapping of the reports is performed using CURL and rvest.</p>")
+                            HTML("<p>The information shown in this web app comes from the <a href=https://www.who.int/emergencies/diseases/novel-coronavirus-2019/situation-reports/>World Health Organization daily reports</a>. It was built by <a href=https://datametrix.co/servicios/>Datametrix</a>, using shinydashboard and dygraphs, and the daily web scrapping of the reports is performed using RCurl and rvest.</p>")
+                            br(),
+                            HTML("<p><b>Since February 17th the confirmed infected definition has changed to fit the reported numbers of the Chinese government</b></p>")
                         )
                     ),
                     box(width=12, height=831, title="World Health Organization Report", status="primary", solidHeader=T,
                             br(),
-                            HTML("<p><b>Click on the tracking graph (above) at any data point to load and consult the complete OMS public report.</b></p>"),
+                            HTML("<b>Click over the above graph at any data point to load and consult the complete WHO public report.</p>"),
                             br(),
                         uiOutput("reporte")
                     )
