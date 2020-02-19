@@ -14,6 +14,7 @@ dashboardPage(skin="red",
         )
     ),
     dashboardBody(
+        tags$head(includeHTML("google-analytics.html")),
         tabItems(
             ########################
             # DB monitoring module #
@@ -29,7 +30,6 @@ dashboardPage(skin="red",
                             dygraphOutput("serie")
                         ),
                         column(3,
-		            tags$head(includeHTML("google-analytics.html")),
                             h4("Instructions:"),
                             HTML("<p>Hover over the graph to show in the box below the absolute frequencies of infected and death individuals, and the proportion of deaths in relation to the daily total of infected people.</p>"),
                             br(),
