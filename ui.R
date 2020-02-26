@@ -37,7 +37,7 @@ dashboardPage(skin="red",
                             br(),
                             HTML("<p>The information shown in this web app comes from the <a href=https://www.who.int/emergencies/diseases/novel-coronavirus-2019/situation-reports/>World Health Organization daily reports</a>. It was built by <a href=https://datametrix.co/servicios/>Datametrix</a>, using shinydashboard and dygraphs, and the daily web scrapping of the reports is performed using RCurl and rvest.</p>"),
                             br(),
-                            HTML("<p><b>Since February 17th the confirmed infected definition used by the chinese government has changed, so that's why we can observe a dramatic increase in the total number of infected in comparisson with the one reported on Febryary 16th.</b></p>")
+                            HTML("<p><b>Since February 17th the confirmed infected definition used by the chinese government to report its data to WHO has changed. That's why a dramatic increase in the total number of infected cases can be observed in comparisson with the quantity reported on February 16th and the previous days.</b></p>")
                         )
                     ),
                     box(width=12, height=831, title="World Health Organization Report", status="primary", solidHeader=T,
