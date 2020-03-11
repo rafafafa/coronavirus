@@ -1,0 +1,73 @@
+# dmidecode 3.1
+Getting SMBIOS data from sysfs.
+SMBIOS 2.6 present.
+
+Handle 0x0002, DMI type 2, 15 bytes
+Base Board Information
+	Manufacturer: LENOVO
+	Product Name:                       
+	Version:                       
+	Serial Number: INVALID             
+	Asset Tag:                       
+	Features:
+		Board is a hosting board
+		Board is replaceable
+	Location In Chassis: To be filled by O.E.M.
+	Chassis Handle: 0x0003
+	Type: Motherboard
+	Contained Object Handles: 0
+
+Handle 0x0014, DMI type 10, 6 bytes
+On Board Device Information
+	Type: Video
+	Status: Enabled
+	Description:    Onboard Video
+
+Handle 0x0015, DMI type 10, 6 bytes
+On Board Device Information
+	Type: Ethernet
+	Status: Enabled
+	Description: Onboard LAN
+
+Handle 0x0016, DMI type 10, 6 bytes
+On Board Device Information
+	Type: Sound
+	Status: Enabled
+	Description:   Onboard Audio
+
+Handle 0x0017, DMI type 10, 6 bytes
+On Board Device Information
+	Type: SATA Controller
+	Status: Enabled
+	Description:   Sata Controller
+
+Handle 0x0057, DMI type 41, 11 bytes
+Onboard Device
+	Reference Designation:  Onboard IGD
+	Type: Video
+	Status: Enabled
+	Type Instance: 1
+	Bus Address: 0000:00:02.0
+
+Handle 0x0058, DMI type 41, 11 bytes
+Onboard Device
+	Reference Designation:  Onboard LAN
+	Type: Ethernet
+	Status: Enabled
+	Type Instance: 1
+	Bus Address: 0000:00:19.0
+
+Handle 0x0059, DMI type 41, 11 bytes
+Onboard Device
+	Reference Designation:  Onboard 1394
+	Type: Other
+	Status: Enabled
+	Type Instance: 1
+	Bus Address: 0000:03:1c.2
+
+Handle 0x0062, DMI type 10, 6 bytes
+On Board Device Information
+	Type: Other
+	Status: Disabled
+	Description: IBM Embedded Security Hardware Type 3
+
