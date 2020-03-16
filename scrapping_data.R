@@ -45,6 +45,9 @@ for(i in 1:length(lista_reportes)){
     if(i>27){
        datos<-as.numeric(paste0(unlist(str_extract_all(gsub(unlist(strsplit(str_extract(texto_c, pattern="Globally.*[0-9] confirmed \\([0-9]+ .*\\)NUEVA_LINEA"), split="confirmed \\([0-9]+ .*\\)NUEVA_LINEA"))[1], pattern="2019|11-12|-19|24 hours|100,000|9 March 2020, a total of 45 States",replacement=""), pattern="[:digit:]")),collapse=""))
     }
+    if(i >54){
+       datos<-as.numeric(paste0(unlist(str_extract_all(gsub(unlist(strsplit(str_extract(texto_c, pattern="Globally.*[0-9] confirmedNUEVA_LINEA"), split="confirmedNUEVA_LINEA"))[1], pattern="2019|11-12|-19|24 hours|100,000|9 March 2020, a total of 45 States",replacement=""), pattern="[:digit:]")),collapse=""))
+    }
     
 #    print(datos)
     lista_datos[[i]]<-datos
