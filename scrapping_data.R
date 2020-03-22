@@ -52,7 +52,8 @@ for(i in 1:length(lista_reportes)){
 #    print(datos)
     lista_datos[[i]]<-datos
     
-    n_muertes<-gsub(unlist(str_extract_all(texto_c, pattern="[0-9]+ deaths")),pattern="[A-z]| |,",replacement="")
+    if(i<61) n_muertes<-gsub(unlist(str_extract_all(texto_c, pattern="[0-9]+ deaths")),pattern="[A-z]| |,",replacement="")
+    if(i>60) n_muertes<-gsub(unlist(str_extract_all(texto_c, pattern="[0-9]+ [0-9]+ deaths|[0-9]+ deaths")),pattern="[A-z]| |,",replacement="")
     lista_muertes[[i]]<-ifelse(length(n_muertes)==0,0,n_muertes)
     
     if(i==1) lista_fecha[[i]]<-as.Date("2020-01-21", format="%Y-%m-%d") else lista_fecha[[i]]<-as.Date(lista_fecha[[1]]+as.numeric(gsub(str_extract(lista_reportes[verif], pattern="[:digit:]+\\.pdf$"),pattern="\\.pdf",replacement=""))-1, format="%Y-%m-%d")
