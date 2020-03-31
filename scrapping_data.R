@@ -2,7 +2,8 @@ library(rvest)
 library(RCurl)
 library(stringr)
 library(pdftools)
-library(reshape2)
+#library(reshape2)
+library(tidyr)
 
 #html<-getURL("https://www.who.int/emergencies/diseases/novel-coronavirus-2019/situation-reports/")
 #html_parsed<-read_html(html)
@@ -63,5 +64,6 @@ for(i in 1:length(lista_reportes)){
 }
 DF<-do.call("rbind",lista_df)
 DF$Death_rate<-DF$Death/DF$Infected*100
-Datos<-melt(DF, id=c("Report","Date"))
+#Datos<-melt(DF, id=c("Report","Date"))
+Datos<-gather(DF,key,value,-Report,-Date)
 colnames(Datos)[3:4]<-c("Tipo","n")
